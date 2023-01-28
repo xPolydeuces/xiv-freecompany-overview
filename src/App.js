@@ -1,9 +1,9 @@
 import React from 'react'
-import Character from './components/Character'
+import CharacterGroup from './components/Character'
 
 function App() {
   return(
-    <Character/>
+    <CharacterGroup/>
   )
 }
 

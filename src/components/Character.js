@@ -2,12 +2,14 @@
 import React from 'react'
 import useAxios from '../hooks/useAxios'
 
-const Character = () => {
-  const member = useAxios('https://xivapi.com/character/40048957')
-  console.log(member)
+const Character = (member_url) => {
+  // eslint-disable-next-line no-unused-vars
+  const member = useAxios(member_url)
+  console.log(member.Name)
   return (
     <div>
-      <h1>Name: {member.Character.Name}</h1>
+      <img src={member.Portrait}></img>
+      <h1>Name: {member.Name}</h1>
     </div>
   )
 }
