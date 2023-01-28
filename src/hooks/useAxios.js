@@ -1,13 +1,13 @@
 // Import data from API using Axios
-
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const useAxios = ({ CONTENT_URL }) => {
+const useAxios = ({ content_url }) => {
   const [data, setData] = useState({})
   useEffect(() => {
-    axios.get(CONTENT_URL).then(response => {setData(response.data)})
-  }, [])
+    axios.get(content_url).then(response => {setData(response.data)})
+  },[])
+  console.log(data)
   return data
 }
 
