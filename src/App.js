@@ -1,5 +1,5 @@
 import React from 'react'
-import CharacterGroup from './components/Character'
+import CharacterGroup from './components/CharacterGroup'
 
 function App() {
   return(

@@ -2,8 +2,8 @@
 import React from 'react'
 import useAxios from '../hooks/useAxios'
 
-const Character = (member_url) => {
-  // eslint-disable-next-line no-unused-vars
+const Character = ({ member_url }) => {
+  console.log(member_url)
   const member = useAxios(member_url)
   console.log(member.Name)
   return (
